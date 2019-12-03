@@ -10,11 +10,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@jimmycode/simple-oauth2-reddit": "^0.6.0",
     "dotenv": "^8.2.0",
-    "reddit-oauth": "^1.1.1",
     "request": "^2.88.0",
     "request-promise": "^4.2.5",
     "requests": "^0.3.0",
+    "simple-oauth2": "^3.1.0",
+    "snoostorm": "^1.2.2",
     "snoowrap": "^1.20.1"
   }
 }

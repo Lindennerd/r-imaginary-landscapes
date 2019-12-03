@@ -1,8 +1,8 @@
-const dotenv = require('dotenv');
 const reddit = require('./redditWrapper');
 
-dotenv.config();
-
-reddit.auth()
-    .then(subreddit => console.log(subreddit))
+reddit.getTopPosts()
+    .then(posts => console.log(posts.map(p => {return {
+        author: p.author,
+        url: p.url
+    } })))
     .catch(err => console.log(err))
